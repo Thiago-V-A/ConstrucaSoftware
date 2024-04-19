@@ -6,4 +6,5 @@ public class Endereco {
     private Integer CEP;
     private  Bairro bairro;
     private Logradouro logradouro;
+    private TipoEndereco tipoEndereco;
 }
