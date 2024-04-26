@@ -1,16 +1,13 @@
 package com.github.thiago_v_a.ConstrucaSoftware.atividade08;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class PreenchimentoVetor {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int[] vetor = new int[10];
-        int indice = 0;
+        ArrayList<Integer> vetor = new ArrayList<>();
 
         try {
             while (true) {
@@ -18,16 +15,15 @@ public class PreenchimentoVetor {
                 int valor = scanner.nextInt();
 
                 if (valor == 0) {
-                    vetor[indice] = valor;
+                    vetor.add(valor);
                     break;
                 }
 
-                vetor[indice] = valor;
-                indice++;
-
-                if (indice >= 10) {
+                if (vetor.size() >= 10) {
                     throw new ArrayIndexOutOfBoundsException("O vetor está cheio (10 posições)");
                 }
+
+                vetor.add(valor);
             }
         } catch (InputMismatchException e) {
             System.out.println("Erro: Digite apenas valores inteiros.");
@@ -36,9 +32,8 @@ public class PreenchimentoVetor {
         }
 
         System.out.println("\nValores digitados:");
-        for (int i = 0; i < indice; i++) {
-            System.out.println(vetor[i]);
+        for (int valor : vetor) {
+            System.out.println(valor);
         }
     }
 }
-
