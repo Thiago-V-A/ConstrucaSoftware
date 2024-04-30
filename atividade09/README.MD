@@ -21,7 +21,7 @@ Técnicas para melhorar a qualidade do código, como testes e análises.
 ### Conclusão:
 Este artigo é sobre a importância da qualidade do código para o desenvolvimento de software. Ele discute os padrões de codificação e como eles garantem a consistência e a qualidade. A qualidade do código é importante porque influencia na segurança, confiabilidade e desempenho do software. Codificação de alta qualidade reduz custos e erros, e leva a projetos mais bem-sucedidos. A Bring oferece soluções para te ajudar a melhorar a qualidade do seu código.
 
-Melhorias no código
+#### Melhorias no código
 De acordo com o artigo, a qualidade do código pode ser aprimorada através de:
 
 - Padronização: A utilização de padrões de codificação garante a consistência e a legibilidade do código. Isso facilita a compreensão e a manutenção do código por diferentes desenvolvedores.
